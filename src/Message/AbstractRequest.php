@@ -25,12 +25,12 @@ abstract class AbstractRequest extends AbstractBaseRequest
      * @param array $parameters
      * @param int $instantCapture
      * @return $this
-     * @throws RuntimeException
+     * @throws \RuntimeException
      */
     protected function init(array $parameters, $instantCapture = 0)
     {
         if (null !== $this->response) {
-            throw new RuntimeException('Request cannot be modified after it has been sent!');
+            throw new \RuntimeException('Request cannot be modified after it has been sent!');
         }
 
         $this->addParameters($parameters);
@@ -147,7 +147,7 @@ abstract class AbstractRequest extends AbstractBaseRequest
      * Can not set notify url
      * @return void
      */
-    public function setNotifyUrl()
+    public function setNotifyUrl($value)
     {
     }
 
@@ -163,7 +163,7 @@ abstract class AbstractRequest extends AbstractBaseRequest
      * Can not set card
      * @return void
      */
-    public function setCard()
+    public function setCard($value)
     {
     }
 
@@ -179,7 +179,7 @@ abstract class AbstractRequest extends AbstractBaseRequest
      * Can not set issuer
      * @return void
      */
-    public function setIssuer()
+    public function setIssuer($value)
     {
     }
 
@@ -195,7 +195,7 @@ abstract class AbstractRequest extends AbstractBaseRequest
      * Can not set client ip
      * @return void
      */
-    public function setClientIp()
+    public function setClientIp($value)
     {
     }
 
@@ -211,7 +211,7 @@ abstract class AbstractRequest extends AbstractBaseRequest
      * Can not set description
      * @return void
      */
-    public function setDescription()
+    public function setDescription($value)
     {
     }
 
@@ -227,7 +227,7 @@ abstract class AbstractRequest extends AbstractBaseRequest
      * Can not set transaction id
      * @return void
      */
-    public function setTransactionId()
+    public function setTransactionId($value)
     {
     }
 
@@ -243,7 +243,7 @@ abstract class AbstractRequest extends AbstractBaseRequest
      * Can not set transaction reference
      * @return void
      */
-    public function setTransactionReference()
+    public function setTransactionReference($value)
     {
     }
 
@@ -259,7 +259,7 @@ abstract class AbstractRequest extends AbstractBaseRequest
      * Can not set card reference
      * @return void
      */
-    public function setCardReference()
+    public function setCardReference($value)
     {
     }
 }
