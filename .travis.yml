@@ -15,4 +15,4 @@ after_script:
 
 notifications:
   email:
-    - maa@scandesigns.dk
+    - martin.aarhof@gmail.com
