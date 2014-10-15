@@ -1,0 +1,34 @@
+{
+    "name": "lsv/omnipay-epay",
+    "description": "Epay driver for the Omnipay payment processing library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Martin Aarhof",
+            "email": "martin.aarhof@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "5.5.*",
+        "omnipay/common": "2.*"
+    },
+    "require-dev": {
+        "omnipay/tests": "2.*",
+        "phpmd/phpmd": "2.*",
+        "phpdocumentor/phpdocumentor": "dev-master",
+        "sebastian/phpcpd": "2.*",
+        "phploc/phploc": "2.*",
+        "phing/phing": "2.*",
+        "satooshi/php-coveralls": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Omnipay\\Epay\\" : "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Omnipay\\EpayTests\\": "tests/"
+        }
+    }
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/4.1/phpunit.xsd"
+         backupGlobals="false"
+         colors="true"
+         bootstrap="tests/bootstrap.php"
+        >
+    <testsuites>
+        <testsuite name="Omnipay Epay">
+            <directory>./tests/</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist>
+            <directory>src/</directory>
+        </whitelist>
+    </filter>
+    <logging>
+        <log type="coverage-html" target="./docs/coverage" charset="UTF-8" highlight="false" lowUpperBound="90" highLowerBound="95"/>
+        <log type="coverage-clover" target="./build/logs/clover.xml"/>
+    </logging>
+</phpunit>
