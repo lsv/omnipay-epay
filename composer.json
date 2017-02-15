@@ -15,7 +15,6 @@
     "require-dev": {
         "omnipay/tests": "2.*",
         "phpmd/phpmd": "2.*",
-        "phpdocumentor/phpdocumentor": "dev-master",
         "sebastian/phpcpd": "2.*",
         "phploc/phploc": "2.*",
         "phing/phing": "2.*",
